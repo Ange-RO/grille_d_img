@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/* Style pour l'en-tête de l'image */
+.header-container {
+  position: relative;
+  width: 100%;
+}
+
+.header-container img {
+  width: 100%;
+}
+
+.header-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px 48px;
+  color: white;
+}
+
+.header-content h1 {
+  margin: 0;
+}
+
+.header-content .hide-small {
+  display: none;
+}
+
+.header-content .hide-large,
+.header-content .hide-medium {
+  display: none;
+}
+
+.header-content p {
+  margin-top: 16px;
+}
+
+.header-content a {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.header-content a:hover {
+  background-color: #444;
+}
+
+/* Style pour la section de produits */
+.product-section {
+  color: grey;
+  padding: 16px;
+}
+
+.product-section p {
+  margin: 0;
+}
+
+/* Style pour la grille de produits */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  filter: grayscale(100%);
+}
+
+.product-grid .product-column {
+  width: 25%;
+  padding: 8px;
+}
+
+.product-grid .product-container {
+  position: relative;
+  width: 100%;
+}
+
+.product-grid .product-container img {
+  width: 100%;
+}
+
+.product-grid .product-container .product-info {
+  margin-top: 8px;
+}
+
+.product-grid .product-container .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 4px 8px;
+}
+
+.product-grid .product-container .button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.product-grid .product-container:hover .button-container {
+  display: block;
+}
+
+.product-grid .product-container .buy-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.product-grid .product-container .buy-button:hover {
+  background-color: #444;
+}
+
+.product-grid .product-container .sale-tag {
+  color: red;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Image header -->
+<div class="header-container">
+    <img src="asset/Chevrolet_Bolt.jpg" alt="Jeans">
+    <div class="header-content">
+      <h1 class="hide-small">New arrivals</h1>
+      <h1 class="hide-large hide-medium">New arrivals</h1>
+      <h1 class="hide-small">COLLECTION 2016</h1>
+      <p><a href="#jeans">SHOP NOW</a></p>
+    </div>
+  </div>
+  
+  <div class="product-section" id="jeans">
+    <p>8 items</p>
+  </div>
+  
+  <!-- Product grid -->
+  <div class="product-grid">
+    <div class="product-column">
+      <div class="product-container">
+        <img src="asset/Ford_F-150.jpg">
+        <div class="product-info">Ripped Skinny Jeans<br><b>$24.99</b></div>
+      </div>
+      <div class="product-container">
+        <img src="asset/Ford_F-150.jpg">
+        <div class="product-info">Mega Ripped Jeans<br><b>$19.99</b></div>
+      </div>
+    </div>
+  
+    <div class="product-column">
+      <div class="product-container">
+        <div class="tag">New</div>
+        <img src="asset/Ford_F-150.jpg">
+        <div class="button-container">
+          <button class="buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <div class="product-info">Mega Ripped Jeans<br><b>$19.99</b></div>
+      </div>
+      <div class="product-container">
+        <img src="asset/Ford_F-150.jpg">
+        <div class="product-info">Washed Skinny Jeans<br><b>$20.50</b></div>
+      </div>
+    </div>
+  
+    <div class="product-column">
+      <div class="product-container">
+        <img src="asset/Ford_F-150.jpg">
+        <div class="product-info">Washed Skinny Jeans<br><b>$20.50</b></div>
+      </div>
+      <div class="product-container">
+        <div class="tag">Sale</div>
+        <img src="asset/Ford_F-150.jpg">
+        <div class="button-container">
+          <button class="buy-button">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <div class="product-info">Vintage Skinny Jeans<br><b class="sale-tag">$14.99</b></div>
+      </div>
+    </div>
+  
+    <div class="product-column">
+      <div class="product-container">
+        <img src="asset/Ford_F-150.jpg">
+        <div class="product-info">Vintage Skinny Jeans<br><b>$14.99</b></div>
+      </div>
+      <div class="product-container">
+        <img src="asset/Ford_F-150.jpg">
+        <div class="product-info">Ripped Skinny Jeans<br><b>$24.99</b></div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
